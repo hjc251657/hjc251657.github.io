@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="你好, 韩佳琛的blog">
+    <meta name="keywords" content="javascript, 韩佳琛的blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>你好 | 韩佳琛的blog</title>
+    <title>javascript | 韩佳琛的blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -315,7 +315,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">你好</h1>
+                    <h1 class="description center-align post-title">javascript</h1>
                 </div>
             </div>
         </div>
@@ -443,7 +443,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-05-31
+                    2021-06-01
                 </div>
                 
 
@@ -464,7 +464,88 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="1-数值型"><a href="#1-数值型" class="headerlink" title="1.数值型"></a>1.数值型</h1><p>var age=18;     //声明变量并赋值</p>
+<p>console.log(age);     //打印输出</p>
+<p>alert()     //显示</p>
+<p>alert(Number.MAX_VALUE)     //最大值</p>
+<p>alert(Number.MIN_VALUE)     //最小值</p>
+<p>var str1=”我是’田宇航’爸爸”;     //引号“外双内单”或“外单内双”</p>
+<p>/n       //换行（转义字符)</p>
+<p>NaN     //非数字判断（输入数字返回false）</p>
+<h1 id="2-字符串型"><a href="#2-字符串型" class="headerlink" title="2.字符串型"></a>2.字符串型</h1><p>var str=’我是田宇航爸爸’；</p>
+<p>var str=’520’;     //定义字符串</p>
+<p>\n     //换行</p>
+<p>\t     //缩进</p>
+<p>console.log(str.length);     //检测获取字符串长度</p>
+<p>console.log(‘韩佳琛是’+’田宇航爸爸’);     //字符串的拼接 ‘+’ ，”数值相加，字符相连“</p>
+<p>console.log(‘12’+12);     // 1212</p>
+<h1 id="3-简单数据类型"><a href="#3-简单数据类型" class="headerlink" title="3.简单数据类型"></a>3.简单数据类型</h1><h5 id="3-1案例：显示年龄（一个交互效果的程序）"><a href="#3-1案例：显示年龄（一个交互效果的程序）" class="headerlink" title="3.1案例：显示年龄（一个交互效果的程序）"></a>3.1案例：显示年龄（一个交互效果的程序）</h5><p>用户输入<del>程序内部处理</del>输出结果</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">        <span class="keyword">var</span> age=prompt(<span class="string">&#x27;请输入年龄&#x27;</span>);</span><br><span class="line">        <span class="keyword">var</span> str=<span class="string">&#x27;今年&#x27;</span>+age+<span class="string">&#x27;岁&#x27;</span>;</span><br><span class="line">        alert(str);</span><br><span class="line">    &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-2布尔型Boolean"><a href="#3-2布尔型Boolean" class="headerlink" title="3.2布尔型Boolean"></a>3.2布尔型Boolean</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">        <span class="keyword">var</span> flag=<span class="literal">true</span>;</span><br><span class="line">        <span class="built_in">console</span>.log(flag+<span class="number">1</span>);</span><br><span class="line">    &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>ps.如果声明一个变量未赋值，就是undefined未定义数据类型</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">        <span class="keyword">var</span> flag;</span><br><span class="line">        <span class="built_in">console</span>.log(flag+<span class="number">1</span>);<span class="comment">//NaN       </span></span><br><span class="line">    &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-3null空值"><a href="#3-3null空值" class="headerlink" title="3.3null空值"></a>3.3null空值</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">        <span class="keyword">var</span> flag=<span class="literal">null</span>;</span><br><span class="line">        <span class="built_in">console</span>.log(flag+<span class="number">1</span>);   <span class="comment">//  1      </span></span><br><span class="line">    &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-4获取数据类型"><a href="#3-4获取数据类型" class="headerlink" title="3.4获取数据类型"></a>3.4获取数据类型</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">        <span class="keyword">var</span> flag1=<span class="number">20</span>;</span><br><span class="line">    	<span class="keyword">var</span> flag2=<span class="literal">null</span>;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="keyword">typeof</span> flag1);   <span class="comment">//  number </span></span><br><span class="line">    	  <span class="built_in">console</span>.log(<span class="keyword">typeof</span> flag2);   <span class="comment">//  object</span></span><br><span class="line">    &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-5数据类型的转换"><a href="#3-5数据类型的转换" class="headerlink" title="3.5数据类型的转换"></a>3.5数据类型的转换</h5><h6 id="转换为字符串型"><a href="#转换为字符串型" class="headerlink" title="转换为字符串型"></a>转换为字符串型</h6><p>1.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">       <span class="keyword">var</span> num=<span class="number">10</span>;</span><br><span class="line">       <span class="keyword">var</span> str=num.tostring();  <span class="comment">//变量.tostring</span></span><br><span class="line">    &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>2.强制转换</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">       <span class="keyword">var</span> num=<span class="number">10</span>;     </span><br><span class="line">       <span class="built_in">console</span>.log(string(num));  <span class="comment">//string(变量)</span></span><br><span class="line">    &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>3.隐式转换</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">       <span class="keyword">var</span> num=<span class="number">10</span>;     </span><br><span class="line">       <span class="built_in">console</span>.log(num+<span class="string">&#x27;&#x27;</span>);</span><br><span class="line">    &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h6 id="转换为数字型"><a href="#转换为数字型" class="headerlink" title="转换为数字型"></a>转换为数字型</h6><p>1.parseInt（变量）取整数，也可去单位（第一个字符必须是数字）</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">       <span class="keyword">var</span> num=<span class="number">10</span>;     </span><br><span class="line">       <span class="built_in">console</span>.log(<span class="built_in">parseInt</span>(num));</span><br><span class="line">    &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>2.parseFloat（变量）浮点数</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">       <span class="keyword">var</span> num=<span class="number">10</span>;     </span><br><span class="line">       <span class="built_in">console</span>.log(<span class="built_in">parseFloat</span>(num));   <span class="comment">//parseFloat(变量)</span></span><br><span class="line">    &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>3.Number(变量)</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">       <span class="keyword">var</span> str=<span class="number">10</span>;     </span><br><span class="line">       <span class="built_in">console</span>.log(<span class="built_in">Number</span>(num));   <span class="comment">//</span></span><br><span class="line">    &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>4.利用算数运算   隐式转换</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;    </span><br><span class="line">       <span class="built_in">console</span>.log(<span class="string">&#x27;123&#x27;</span>-<span class="string">&#x27;120&#x27;</span>);</span><br><span class="line">    &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>5.案例：1.计算年龄</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">        <span class="keyword">var</span> year=prompt(<span class="string">&#x27;请输入出生年份&#x27;</span>);</span><br><span class="line">       <span class="keyword">var</span> age=<span class="number">2018</span>-year;    <span class="comment">//year是字符串型， 利用&quot;-&quot;号隐式转换</span></span><br><span class="line">       alert(<span class="string">&#x27;今年&#x27;</span>+age+<span class="string">&#x27;岁了&#x27;</span>);</span><br><span class="line">    &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>2.加法计算器</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">       <span class="keyword">var</span> num1=prompt(<span class="string">&#x27;请输入第一个数值&#x27;</span>);</span><br><span class="line">       <span class="keyword">var</span> num2=prompt(<span class="string">&#x27;请输入第二个数值&#x27;</span>);</span><br><span class="line">       <span class="keyword">var</span> sum=num1-(-num2);    <span class="comment">//num是字符串型， 利用&quot;-&quot;号隐式转换</span></span><br><span class="line">	<span class="comment">//var sum=parseFloat(num1)+parseFloat(num2);</span></span><br><span class="line">      alert(<span class="string">&#x27;结果是&#x27;</span>+sum);</span><br><span class="line">   &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h6 id="转换为布尔型"><a href="#转换为布尔型" class="headerlink" title="转换为布尔型"></a>转换为布尔型</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="built_in">Boolean</span>(<span class="number">0</span>));   <span class="comment">//  false</span></span><br><span class="line">        <span class="built_in">console</span>.log(<span class="built_in">Boolean</span>(<span class="literal">NaN</span>));   <span class="comment">//  false</span></span><br><span class="line">        <span class="built_in">console</span>.log(<span class="built_in">Boolean</span>(<span class="literal">null</span>));    <span class="comment">//   false</span></span><br><span class="line">        <span class="built_in">console</span>.log(<span class="built_in">Boolean</span>(<span class="literal">undefined</span>));    <span class="comment">//   false</span></span><br><span class="line">        <span class="built_in">console</span>.log(<span class="built_in">Boolean</span>(<span class="string">&#x27;田宇航&#x27;</span>));    <span class="comment">//   true</span></span><br><span class="line">        <span class="built_in">console</span>.log(<span class="built_in">Boolean</span>(<span class="number">12</span>));    <span class="comment">//   true</span></span><br><span class="line">        <span class="built_in">console</span>.log(<span class="built_in">Boolean</span>(<span class="string">&#x27;123&#x27;</span>));    <span class="comment">//   true</span></span><br><span class="line">        <span class="built_in">console</span>.log(<span class="built_in">Boolean</span>(<span class="string">&#x27; &#x27;</span>));   <span class="comment">//  true</span></span><br><span class="line">    &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-6-标志符、关键字、保留字"><a href="#3-6-标志符、关键字、保留字" class="headerlink" title="3.6 标志符、关键字、保留字"></a>3.6 标志符、关键字、保留字</h5><p>1.标志符：开发人员为变量、属性、函数、参数取的名字（非关键字、保留字）</p>
+<p>2.关键字：break,case,catch,continue,default,do,delete,else,finally,for,function,if,in······</p>
+<p>3.保留字：boolean,byte,char,class,const,double,debugger,export,extends,final,float,goto······</p>
+<h1 id="4-运算符operator（操作符）"><a href="#4-运算符operator（操作符）" class="headerlink" title="4.运算符operator（操作符）"></a>4.运算符operator（操作符）</h1><h5 id="4-1算数运算符"><a href="#4-1算数运算符" class="headerlink" title="4.1算数运算符"></a>4.1算数运算符</h5><p>“+”加,   “-“减,   “*”乘,   “/“除,   “%”余;</p>
+<p>ps.尽量避免浮点数的运算；避免浮点数的比较大小；</p>
+<h5 id="4-2递增和递减运算符"><a href="#4-2递增和递减运算符" class="headerlink" title="4.2递增和递减运算符"></a>4.2递增和递减运算符</h5><p>num++;   //    先返回，再加1</p>
+<p>++num;    //   先加1，后返回</p>
+<p>num–；   //    先返回，再减1</p>
+<p>–num；   //   先减1，后返回</p>
+<h5 id="4-3比较运算符"><a href="#4-3比较运算符" class="headerlink" title="4.3比较运算符"></a>4.3比较运算符</h5><p>‘==’符号会将字符型转换为数字型</p>
+<p>‘===’ 全等于符号</p>
+<h5 id="4-4逻辑运算符"><a href="#4-4逻辑运算符" class="headerlink" title="4.4逻辑运算符"></a>4.4逻辑运算符</h5><h6 id="短路运算原理（逻辑中断）：当有多个表达式值时左边表达式值可以确定结果时，就不再继续运算右边表达式的值；"><a href="#短路运算原理（逻辑中断）：当有多个表达式值时左边表达式值可以确定结果时，就不再继续运算右边表达式的值；" class="headerlink" title="短路运算原理（逻辑中断）：当有多个表达式值时左边表达式值可以确定结果时，就不再继续运算右边表达式的值；"></a>短路运算原理（逻辑中断）：当有多个表达式值时左边表达式值可以确定结果时，就不再继续运算右边表达式的值；</h6><p>1.逻辑与短路运算     表达式1  &amp;&amp;  表达式2   如果表达式1结果为真，则返回表达式2；如果表达式1为假，则返回表达式1；</p>
+<p>2.逻辑或短路运算     表达式1  ||   表达式2    如果表达式1结果为真，则返回表达式1；如果表达式1为假，则返回表达式2；</p>
+<h1 id="5-javascript流程控制分支"><a href="#5-javascript流程控制分支" class="headerlink" title="5.javascript流程控制分支"></a>5.javascript流程控制分支</h1><h5 id="5-1判断闰年"><a href="#5-1判断闰年" class="headerlink" title="5.1判断闰年"></a>5.1判断闰年</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">        <span class="keyword">var</span> year=prompt(<span class="string">&#x27;输入年份&#x27;</span>);</span><br><span class="line">        <span class="keyword">if</span>(year%<span class="number">400</span>==<span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            alert(year+<span class="string">&#x27;是闰年&#x27;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(year%<span class="number">4</span>==<span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(year%<span class="number">100</span>!=<span class="number">0</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                alert(year+<span class="string">&#x27;是闰年&#x27;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> &#123;alert(year+<span class="string">&#x27;不是闰年&#x27;</span>);&#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> &#123;alert(year+<span class="string">&#x27;不是闰年&#x27;</span>)&#125;;</span><br><span class="line">    &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h5 id="5-2三目运算符"><a href="#5-2三目运算符" class="headerlink" title="5.2三目运算符"></a>5.2三目运算符</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">        <span class="keyword">var</span> time=prompt(<span class="string">&#x27;输入一个数字0-59&#x27;</span>);</span><br><span class="line">        <span class="keyword">var</span> result=time &lt; <span class="number">10</span> ? <span class="string">&#x27;0&#x27;</span> + time : time;</span><br><span class="line">        alert(result);</span><br><span class="line">    &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h5 id="5-4数组"><a href="#5-4数组" class="headerlink" title="5.4数组"></a>5.4数组</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">      <span class="keyword">var</span> arr=<span class="keyword">new</span> <span class="built_in">Array</span>();   <span class="comment">//new关键字</span></span><br><span class="line">      <span class="keyword">var</span> a=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>];   <span class="comment">//字面量</span></span><br><span class="line">    &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h5 id="5-5动态检测数组长度"><a href="#5-5动态检测数组长度" class="headerlink" title="5.5动态检测数组长度"></a>5.5动态检测数组长度</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    <span class="keyword">var</span> arr=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>];</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;arr.length;i++)</span><br><span class="line">        &#123;</span><br><span class="line">            cnsole.log(arr[i]);</span><br><span class="line">        &#125;</span><br><span class="line">	&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h5 id="5-6定义函数"><a href="#5-6定义函数" class="headerlink" title="5.6定义函数"></a>5.6定义函数</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">fuction 函数名()&#123;</span><br><span class="line">    <span class="comment">//函数体代码</span></span><br><span class="line">&#125;</span><br><span class="line">函数名();   <span class="comment">//调用函数</span></span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+
                 
             </div>
             <hr/>
@@ -490,7 +571,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/05/31/%E4%BD%A0%E5%A5%BD/">http://example.com/2021/05/31/%E4%BD%A0%E5%A5%BD/</a>
+                    <a href="http://example.com/2021/06/01/javascript/">http://example.com/2021/06/01/javascript/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -697,9 +778,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/06/01/javascript/">
                     <div class="card-image">
@@ -717,9 +799,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-01
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-01
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -728,6 +810,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -738,13 +821,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/05/31/hello-world/">
+                <a href="/2021/05/31/%E4%BD%A0%E5%A5%BD/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="你好">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">你好</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
